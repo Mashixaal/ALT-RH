@@ -28,23 +28,23 @@
 
 // Exercise 4
 
-let a = parseInt(prompt("entrer la valeur de a"));
-let b = parseInt(prompt("entrer la valeur de b"));
-let c = parseInt(prompt("entrer la valeur de c"));
+// let a = parseInt(prompt("entrer la valeur de a"));
+// let b = parseInt(prompt("entrer la valeur de b"));
+// let c = parseInt(prompt("entrer la valeur de c"));
 
-let delta 
-delta = ((b*b)-4*a*c);
-if(delta < 0){
-    alert("pas de solution dans R");
+// let delta 
+// delta = ((b*b)-4*a*c);
+// if(delta < 0){
+//     alert("pas de solution dans R");
 
-}else{
-    if(delta == 0){
-        alert("x = " + (-b/(2*a)));
-    }else{
-        alert(" x1 = " + (-b - Math.sqrt(delta))/(2*a));
-        alert(" x2 = " + (-b + Math.sqrt(delta))/(2*a));
-    }
-}
+// }else{
+//     if(delta == 0){
+//         alert("x = " + (-b/(2*a)));
+//     }else{
+//         alert(" x1 = " + (-b - Math.sqrt(delta))/(2*a));
+//         alert(" x2 = " + (-b + Math.sqrt(delta))/(2*a));
+//     }
+// }
 
 
 // Exercise 5
@@ -75,3 +75,19 @@ if(delta < 0){
 //     }
 // }
 
+// Exercise 6
+
+let carac = prompt("Entrer un caractère");
+if(carac >= 'a' && carac <= 'z'){
+    alert("miniscule");
+}else{
+    if(carac >= 'A' && carac <= 'Z'){
+        alert("majuscule");
+    }else{
+        if(carac >= '0' && carac <= '9'){
+            alert("chiffre");
+        }else{
+            alert("spéciale");
+        }
+    }
+}
