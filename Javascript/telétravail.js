@@ -91,3 +91,37 @@ if(carac >= 'a' && carac <= 'z'){
         }
     }
 }
+
+// Exercise 7
+
+// let nombre = prompt("fini de note");
+// let nombre2 = prompt("meilleure note");
+// let nombre3 = prompt("mauvaise note");
+// if (nombre === 20) {
+//     alert("bravo");
+// } else{
+//     if (nombre3 === 0) {
+//         alert("1");
+//     }
+// }
+
+// Exercise 
+
+let n = parseInt(prompt("Entrer un entier entre 1 et 20")); 
+let haut = n;
+let bas = n;
+let nbr = 1;
+let s = n;
+while (n != 0) {
+    if (n > haut) {
+        haut = n;
+    } 
+    if (n < bas) {
+        bas = n;
+    } 
+    nbr++;
+    s = s + n;
+    n = parseInt(prompt("Entrer un entier entre 1 et 20"));
+}
+alert("Meilleur note : " + haut + ", mauvaise : " + bas + ", et moyenne : " 
++ s/nbr);
