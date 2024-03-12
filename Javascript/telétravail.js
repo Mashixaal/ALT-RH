@@ -105,7 +105,7 @@
 //     }
 // }
 
-// Exercise 7
+// Exercise 8
 
 // let n = parseInt(prompt("Entrer un entier entre 1 et 20")); 
 // let haut = n;
@@ -128,15 +128,15 @@
 
 // Exercise 8
 
-let a = prompt("Entrer la valeur de a");
-let b = prompt("Entrer la valeur de b");
-let comp = 0;
-let resultat = 1;
+// let a = prompt("Entrer la valeur de a");
+// let b = prompt("Entrer la valeur de b");
+// let comp = 0;
+// let resultat = 1;
 
-while (comp < b) {
-    resultat = resultat *a;
-    comp++
-}
-alert(resultat);
+// while (comp < b) {
+//     resultat = resultat *a;
+//     comp++
+// }
+// alert(resultat);
 
 
