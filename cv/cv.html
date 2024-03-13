@@ -3,9 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/profile.png" type="image/">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/app.js"></script>
     <title>CV</title>
 </head>
 <body>
-    <h1>Safwan Hassan Abubakar</h1>
-</body>
+    <header class="grid grid-cols-3 h-40 bg-yellow">
+      <div class="flex justify-center items-center">
+        <img
+            src="./assets/img/profile.png"
+            alt="profil"
+            height="auto"
+            width="25%"
+            class="rounded-full"
+            />
+      </div>
+      <div
+        class="flex flex-col items-center uppercase col-span-2 justify-center">
+        <h1>Safwan Hassan Abubakar</h1>
+        <h2>Développeur Web</h2>
+      </div>
+    </header>
+    <section class="grid grid-cols-3">
+      <!-- BODY DIV 1 -->
+      <aside class="grid bg-blue h-full grid-rows-6 text-center">
+        <!-- ROW 1 -->
+        <div class="pt-8">
+          <h3 class="uppercase">Competences</h3>
+          <hr width="50%" />
+          <div class="flex flex-col pt-4 pl-4 ">
+            <span class="m-1">Utilisation des logiciel : Inscape, Fusion 360 et Arduino </span>
+            <span class="">Création de projet via l'impression 3D, découpe au laser </span>
+            <span class="uppercase m-1">html/css</span>
+            <span>Javascript</span>
+            <span class="uppercase m-1">php/sql</span>
+          </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="m-5">
+          <h3 class="uppercase ">Mes Liens</h3>
+          <hr width="50%" />
+          <div class="flex flex-col pt-4 pl-4">
+            <span class="m-1"
+                >GitHub :
+            <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://github.com/mashixaal"
+                >https://github.com/Mashixaal</a
+                ></span
+                >
+            <span
+                >Portfolio :
+            <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://abubakars-portfolio.netlify.app"
+                >
+                https://abubakars-portfolio.netlify.app/</a
+                ></span
+                >
+          </div>
+        </div>
+        <!-- ROW 3 --->
+        <div>
+          <h3 class="uppercase">Hard-Skills</h3>
+          <hr width="50%" />
+          <div class="pt-4 pl-4">
+            <ul class="list-none">
+              <li class="m-1">React</li>
+              <li>Tailwind</li>
+              <li class="m-1">Webpack</li>
+              <li>Node</li>
+              <li class="m-1">Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+        <!-- ROW 4 -->
+        <div>
+          <h3 class="uppercase">Soft-Skills</h3>
+          <hr width="50%" />
+          <div class="pt-4 pl-4">
+            <ul class="list-none">
+              <li class="m-1">Ambitieux</li>
+              <li>Courageux</li>
+              <li class="m-1">Motivé</li>
+              <li>Patient</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Row 5 -->
+        <div>
+          <h3 class="uppercase ">centre d'intérêts</h3>
+          <hr width="50%" />
+          <h1>Sports:</h1>
+          <p class="m-1">
+            Salle de Musculation 
+          </p>
+            <p>Natation</p>
+            <p class="m-1">
+              Football 
+            </p>
+            <p>Jeu aux vedio</p>
+            <p class="m-1">Vélo</p>
+          <div class="flex flex-col pt-4 pl-4">
+          </div>
+        </div>
+        <!-- ROW 6 -->
+        <div>
+          <h3 class="uppercase">Information générales</h3>
+          <hr width="50%" />
+          <div class="flex flex-col pt-4 pl-4">
+            <span>safwan7342@gmail.com</span>
+            <span class="m-2">07 51 05 85 07</span>
+            <span>Meaux (77100)</span>
+          </div>
+        </div>
+      </aside>
+      <!---------------------------------------- BODY DIV 2 -------------------------------------------------->
+      <div class="col-span-2 px-8 py-8 bg-white-yellow">
+        <h1 class="text-center uppercase">Expériences professionnelles</h1>
+        <hr>
+        <div class="pt-8 pl-8">
+          <p>
+          <h3>Maintenance informatique et Bureautique</h3>
+          <span class="italic">2022-2022 Fablab Descartes, Champs-sur-marne</span>
+          <ul class="pl-6 pt-2">
+            <li>Utilisation des logiciels : Inscape, Fusion 360 et Arduino</li>
+            <li>Création de projet via l'impression 3D, découpe au laser</li>
+          </ul>
+          </p>
+          <p class="pt-8">
+          <h3>Declic Technicien Assintant Informatique</h3>
+          <span class="italic">2022-2022 Afpa, Champs-sur-marne</span>
+          <ul class="pl-6 pt-2">
+            <li>Initiation à l'architecture serveur</li>
+            <li>Cours thèorique sur le web en général</li>
+          </ul>
+          </p>
+        </div>
+        <h1 class="text-center uppercase pt-8">En formation</h1>
+        <hr>
+        <div class="pt-8 pl-8">
+            <p>
+                <h3>Développeur Web - (Digital Academy by Insy2S)</h3>
+                <span class="italic">En cours depuis Janvier 2024</span>
+                <ul class="pl-6 pt-2">
+                  <li>Création de site web</li>
+                  <li>Gestion du Front-end</li>
+                  <li>Gestion du Back-end</li>
+                </ul>
+                </p>
+          <p class="pt-8">
+          <h3>Développeur Web - (ACS)</h3>
+          <span class="italic">2022-2023</span>
+          <ul class="pl-6 pt-2">
+            <li>Création de site web</li>
+            <li>Gestion du Front-end</li>
+            <li>Gestion du Back-end</li>
+          </ul>
+          </p>
+          <p class="pt-8">
+          <h3>Validation de projet - (E2C)</h3>
+          <span class="italic">2021-2022</span>
+          </p>
+          <p class="pt-8">
+          <h3>Formation Linguistique - (ACOFORM)</h3>
+          <span class="italic">2021-2021</span>
+          <p class="pt-8">
+          <h3>Formation Civique - (OFII)</h3>
+          <span class="italic">2021-2021</span>
+          </p>
+        </div>
+        <h1 class="text-center uppercase pt-8">Diplôme</h1>
+        <hr>
+        <div class="pt-8 pl-8">
+          <p>
+          <h3>DWWM III - (ACS)</h3>
+          <span class="italic">2022-2023</span>
+          <span>Développer la partie front-end et back-end d'une application web et web mobile</span>
+          <ul class="pl-6 pt-2">
+            <li>Création de site web</li>
+            <li>Gestion du Front-end</li>
+            <li>Gestion du Back-end</li>
+          </ul>
+          </p>
+          <p class="pt-8">
+          <h3>Bac génerale - (Lycée)</h3>
+          <span class="italic">2015-2017 au Yémen</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------- Footer ---------------------------------------------------------------------->
+    <footer class="w-full h-20 bg-yellow text-white">
+        <div class="flex flex-col justify-center items-center h-full">
+          <span class="italic pt-8">Copyright &copy; 2024</span>
+          <div class="pt-4 ">
+              <span>
+              <a href="https://github.com/Mashixaal" class="decoration-none" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-github text-blue"></i>
+              </a>
+              </span>
+              <span class="px-4">
+              <a href="https://agence-eclair.netlify.app/" class="decoration-none" target="_blank" rel="noreferrer noopener">
+              <i class="fa-solid fa-link text-blue"></i>
+              </a>
+              </span>
+              <span>
+              <a href="https://www.linkedin.com/in/abubakar-safwan-376454250/" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-linkedin-in text-blue"></i>
+              </a>
+              </span>
+          </div>
+        </div>
+    </footer>
+  </body>
 </html>
