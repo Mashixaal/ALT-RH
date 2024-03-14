@@ -23,3 +23,4 @@ while (j < t.length){
     j++;
 } 
 alert ("Le min est : "+ min + " son indice est : " + indice);
+
