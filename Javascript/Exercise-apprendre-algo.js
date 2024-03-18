@@ -14,10 +14,10 @@
 let i = parseFloat(prompt("saisir le prix de fabrication"));
 let x = parseFloat(prompt("saisir le prix de vente"));
 
-if(i>x){
+if(i > x){
     alert("perte de fabrication est " + (i - x));
 } else{
-    if(i<x){
+    if(i < x){
         alert("profit de vente est " + (i - x));
     }
 } 
