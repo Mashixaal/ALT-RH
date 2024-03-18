@@ -78,18 +78,43 @@
 
 // Exo 8
 
-let n = parseInt(prompt("Entrez un nombre :"));
-let etoiles = '';
+// let n = parseInt(prompt("Entrez un nombre :"));
+// let etoiles = '';
 
-if (!isNaN(n) && n > 0) {
-    for (let i = 1; i <= n; i++) {
-         etoiles = '';
-        for (let j = 0; j < i; j++) {
-            etoiles += '*'; // etoiles = etoiles + "*";
-        }
-        document.write(etoiles);
-        document.write("<br/>");
+// if (!isNaN(n) && n > 0) {
+//     for (let i = 1; i <= n; i++) {
+//          etoiles = '';
+//         for (let j = 0; j < i; j++) {
+//             etoiles += '*'; // etoiles = etoiles + "*";
+//         }
+//         document.write(etoiles);
+//         document.write("<br/>");
+//     }
+// } else {
+//     alert("Entrer un nombre valide");
+// }
+
+// Deuxième solution Exo 8
+
+// let n = parseInt(prompt("donner un entier"));
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 0; j < i; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+// Exo 9
+let n = parseInt(prompt("donner un entier"));
+for (let i = 1; i <= n; i++) {
+    for (let j = 0; j < i; j++) {
+        document.write("");
     }
-} else {
-    alert("Entrer un nombre valide");
+    document.write("<br>");
+}
+for (let i = (n-1); i >= 1; i--) {
+    for (let j = 0; j < i; j++) {
+        document.write("");
+    }
+    document.write("<br>");
 }
