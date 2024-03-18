@@ -79,16 +79,17 @@
 // Exo 8
 
 let n = parseInt(prompt("Entrez un nombre :"));
+let etoiles = '';
 
 if (!isNaN(n) && n > 0) {
     for (let i = 1; i <= n; i++) {
-        let etoiles = '';
+         etoiles = '';
         for (let j = 0; j < i; j++) {
-            etoiles += '*';
+            etoiles += '*'; // etoiles = etoiles + "*";
         }
         document.write(etoiles);
         document.write("<br/>");
     }
 } else {
-    alert("Entrer un nombre valide et positif.");
+    alert("Entrer un nombre valide");
 }
