@@ -18,7 +18,7 @@ if(i > x){
     alert("perte de fabrication est " + (i - x));
 } else{
     if(i < x){
-        alert("profit de vente est " + (i - x));
+        alert("profit de vente est " + (x - i));
     }
 } 
 
