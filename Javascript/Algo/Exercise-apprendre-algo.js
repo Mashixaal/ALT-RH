@@ -105,16 +105,32 @@
 // }
 
 // Exo 9
-let n = parseInt(prompt("donner un entier"));
-for (let i = 1; i <= n; i++) {
-    for (let j = 0; j < i; j++) {
-        document.write("*");
+// let n = parseInt(prompt("donner un entier"));
+// for (let i = 1; i <= n; i++) {
+//     for (let j = 0; j < i; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+// for (let i = (n-1); i >= 1; i--) {
+//     for (let j = 0; j < i; j++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+// Exo 10
+let n = parseInt(prompt("donner un entier positif"));
+let i = 1;
+let j = 2;
+document.write("Les nombres premiers entre 1 et " + n + " :<br>");
+while (i <= n) {
+    j = 2;
+    while ((i%j != 0) && (j < i/2)) {
+        j++;
     }
-    document.write("<br>");
-}
-for (let i = (n-1); i >= 1; i--) {
-    for (let j = 0; j < i; j++) {
-        document.write("*");
+    if (j > i/2) {
+        document.write(i + "<br>");
     }
-    document.write("<br>");
+    i++;
 }
