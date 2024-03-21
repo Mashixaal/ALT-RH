@@ -18,6 +18,19 @@ function arreter(){
    y = null;
 }
 
+function reprendre(){
+    let x = document.getElementById("img");
+    if (i == 1){
+        x.setAttribute("src", "img/naruto.png");
+        i = 2;
+    } else {
+        x.setAttribute("src", "img/zoro.jpeg");
+        i = 1; // zoro
+    }
+}
+
+
+
 
 
 
