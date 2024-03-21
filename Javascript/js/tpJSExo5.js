@@ -11,4 +11,13 @@ function permeter(){
     }
 }
 
-setInterval("permeter()", 2000);
+let y = setInterval("permeter()", 2000);
+
+function arreter(){
+   clearInterval(y)
+   y = null;
+}
+
+
+
+
