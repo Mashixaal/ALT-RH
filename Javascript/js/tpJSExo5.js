@@ -49,3 +49,26 @@ function precedent(){
     n.src = "img/" + t[j]; // y.setAttribute("src","img/"+t[j]);
 }
 
+let position  = 1;
+let nb_images = 4;
+function descend () {
+  let idluffy5   = 'img'+position;
+  position++;
+  if (position>nb_images) {
+    position = 1;
+  }
+  let idsuiv = 'img'+position;
+  document.getElementById(idluffy5).src = document.getElementById(idsuiv).src;
+  document.getElementById(idsuiv).src = 'Image/luffy5.jpg';
+}
+
+
+function monte () {
+  let idluffy5   = 'img'+position;
+  position--;
+  if (position<1) {
+    position = nb_images;
+  }
+  let idprec = 'img'+position;
+  document.getElementById(idluffy5).src = document.getElementById(idprec).src;
+  document.getElementById(idprec).src = 'Image/luffy5.jpg';}
