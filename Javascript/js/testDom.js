@@ -34,7 +34,6 @@ function remplacerTexte(elt,texte){
         return texte;
     }
 
-
 function effacerTitre() {
     let dv = document.getElementById("titre");
     if(dv != null){
