@@ -1,4 +1,4 @@
 {
     "nom": "safwan",
-    "email": "safwan@hs.fr"
+    "email": " safwan@gmail.com"
 }
