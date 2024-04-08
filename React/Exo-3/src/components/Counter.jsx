@@ -1,8 +1,9 @@
-const Counter = () => {
-  let count = 0;
+import React, { useState } from "react";
 
+const Counter = () => {
+  const [count, useCount] = useState(0);
   const increment = () => {
-    count++;
+    setCount(prevCount => prevCount + 1);
   };
 
   console.log(count);
