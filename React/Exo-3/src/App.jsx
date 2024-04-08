@@ -1,18 +1,41 @@
 import React, { useState } from "react";
+import Counter from "./components/Counter";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount((prevCount) => prevCount + 1);
-  };
+const App = () => {
+  const isAdmin = false;
 
   return (
     <div>
-      <p>Le compter est à : {count}</p>
-      <button onClick={increment}>Incrémenter</button>
+      <h3>My App</h3>
+      <Counter/>
+      {isAdmin ? (
+        <p>Vous étes admin</p>
+      ) : (
+        <p>Vous n'êtes pas admin</p>
+      )}
     </div>
   );
 };
 
-export default Counter;
+
+  // if (isAdmin) {
+  //   return (
+  //     <div>
+  //       <h3>My App</h3>
+  //       <Counter />
+  //       <p>Je suis un admin</p>
+  //     </div>
+  //   );
+  // } else {
+  //   return (
+  //     <div>
+  //       <h3>My App</h3>
+  //       <Counter />
+  //       <p>Je ne suis pas un admin</p>
+  //     </div>
+  //   );
+  // }
+
+
+export default App;
