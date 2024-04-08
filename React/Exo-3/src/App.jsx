@@ -5,17 +5,27 @@ import Counter from "./components/Counter";
 const App = () => {
   const isAdmin = false;
 
-  return (
-    <div>
-      <h3>My App</h3>
-      <Counter/>
-      {isAdmin ? (
-        <p>Vous étes admin</p>
-      ) : (
-        <p>Vous n'êtes pas admin</p>
-      )}
-    </div>
-  );
+//   return (
+//     <div>
+//       <h3>My App</h3>
+//       <Counter/>
+//       {isAdmin ? (
+//         <p>Vous étes admin</p>
+//       ) : (
+//         <p>Vous n'êtes pas admin</p>
+//       )}
+//     </div>
+//   );
+// }; 
+
+return (
+  <div>
+    <h3>My App</h3>
+    <Counter/>
+    {isAdmin && <p>Vous êtes admin</p>} 
+      <p>Vous étes admin</p>
+  </div>
+);
 };
 
 
