@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 const App = () => {
@@ -13,20 +14,35 @@ const App = () => {
   //   );
   // };
 
-  const arr = [
-    { firstName: "Safwan", lastName: "Jamal" },
-    { firstName: "Babacar", lastName: "Sidy" },
-    { firstName: "Dany", lastName: "Nasim" },
-  ];
+  //   const arr = [
+  //     { firstName: "Safwan", lastName: "Jamal" },
+  //     { firstName: "Babacar", lastName: "Sidy" },
+  //     { firstName: "Dany", lastName: "Nasim" },
+  //   ];
+
+  //   return (
+  //     <ul>
+  //       {arr.map((item, index) => (
+  //         <li key={index}>
+  //           {item.firstName} {item.lastName}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // Effectue une exéction quand le composant est monté,
+    // Puis le refait à chaque fois que count change
+    console.log("exécution de useEffect");
+  }, [count]);
 
   return (
-    <ul>
-      {arr.map((item, index) => (
-        <li key={index}>
-          {item.firstName} {item.lastName}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <h1>Compteur : {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Incrémenter</button>
+    </div>
   );
 };
 
