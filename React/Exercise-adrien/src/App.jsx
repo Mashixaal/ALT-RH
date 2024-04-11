@@ -1,24 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
+import Clock from './components/Clock'
+import './App.css'
+import UserList from './components/UserList'
 
-const UserList = () => {
-
-    const [users, setUsers] = useState([]);
-
-    useEffect(()=>{
-       fetch('https://jsonplaceholder.typicode.com/users')
-         .then( response => response.json())
-         .then( data => setUsers(data))
-         .catch(error => console.error('Error ', error)) 
-    },[])
+function App() {
 
   return (
-    <div>
-        <h1> Liste Utilisateur : </h1>
-        {users.map(user=>(
-            <p key={user.id}>{user.name}</p>
-        ))}
-    </div>
+    <>
+    <Clock/>
+    <UserList/>
+    </>
   )
 }
 
-export default UserList
+export default App
