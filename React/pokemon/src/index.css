@@ -52,6 +52,8 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #A8CFCD;
+    /* background-image: url(./assets/img/bg-pokemon.jpg); */
+    
   }
   a:hover {
     color: #747bff;

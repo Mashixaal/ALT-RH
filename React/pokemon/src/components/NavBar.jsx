@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav class="navbar blue">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src={image} alt="Logo" width="60%" height="70px" class="d-inline-block align-text-top"/>
+      <img src={image} alt="Logo" width="60%" height="70px" className="d-inline-block align-text-top"/>
       
     </a>
   </div>
