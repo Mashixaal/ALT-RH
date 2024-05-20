@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
 
-let API_key ="api_key=4814bdf6f5a651f9666651d6ac18636d";
-let base_url = "https://api.themoviedb.org/3"
+// let API_key ="api_key=4814bdf6f5a651f9666651d6ac18636d";
+// let base_url = "https://api.themoviedb.org/3"
 const Acceuil = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const Acceuil = () => {
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </form>
-        <h5><a href="#">Favoris</a></h5>
+        <h5><a href="#" className="red mx-4 favoris">Favoris</a></h5>
       </div>
       <div className="container">
           <Card/>

@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import SimpleForm from './components/SimpleForm'
 import './App.css'
+import Informations from './components/Informations'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <SimpleForm />
+     <Informations />
     </>
   )
 }

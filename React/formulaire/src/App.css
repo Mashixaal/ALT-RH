@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  max-width: 75%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  border: 1px solid;
+  border-radius: 2%;
 }
 
 .logo {
@@ -39,4 +41,25 @@
 
 .read-the-docs {
   color: #888;
+}
+.droite, .infos {
+  display: flex;
+  flex-direction: column;
+}
+h2{
+  text-align: center;
+}
+/* .ver {
+  border-left: 1px solid #000;
+  display: inline-block;
+  height: 250px;
+  margin: 0 20px;
+   left: 50%;
+  /*right: 50%; */
+  /* position: absolute; 
+} */
+span {
+  position: absolute;
+  height: 250px;
+
 }
