@@ -1,0 +1,44 @@
+.button {
+  font-family: sans-serif;
+  border: none;
+  padding: 10px 10px 10px 52px;
+  background-color: #fe0;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+.button:hover {
+  background-color: #fff566;
+}
+.button::before {
+  content: " ";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  background-image: url(../image/sprite.png);
+}
+
+a:nth-child(1)::before {
+  background-position-x: 0px;
+}
+
+a:nth-child(2)::before {
+  background-position-x: -32px;
+}
+
+a:nth-child(3)::before {
+  background-position-x: -64px;
+}
+
+a:nth-child(4)::before {
+  background-position-x: -96px;
+}
+
+a:nth-child(5)::before {
+  background-position-x: -128px;
+}
+
+/*# sourceMappingURL=image.css.map */

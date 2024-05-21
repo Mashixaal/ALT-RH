@@ -1,0 +1,17 @@
+// game loop
+while (true) {
+    let enemy1 = readline(); // name of enemy 1
+    let dist1 = parseInt(readline()); // distance to enemy 1
+    let enemy2 = readline(); // name of enemy 2
+    let dist2 = parseInt(readline()); // distance to enemy 2
+
+    // Write an action using console.log()
+    
+    if (dist1 < dist2) {
+        console.log(enemy1);
+    } else {
+        console.log(enemy2);
+    }
+    // Enter the code here
+
+}
