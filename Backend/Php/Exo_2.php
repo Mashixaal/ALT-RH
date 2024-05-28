@@ -18,4 +18,5 @@
     <li>7 x <?php echo $cpt ?> = <?php echo $cpt * 7 ?></li>
 
     <?php } ?>
+    
 </ul>
