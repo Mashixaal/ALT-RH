@@ -13,13 +13,14 @@ class Personne {
     Modificateurs : public - private - protected - "NEANT"(on met rien du tout)
 
     */
-    private $nom = "Shalhoub";
-    private $prenom = "Tony";
-    private $age = 70;
-    private $fonction = "Acteur";
-    private $salaire = 1850;
+    protected $nom = "Shalhoub";
+    protected $prenom = "Tony";
+    protected $age = 70;
+    protected $fonction = "Acteur";
+    protected $salaire = 1850;
 
     // Le constructeur : créer des objets + initialiser les attributs
+    // LE CONSTRUCTEUR NE FAIT PAS PARTIE DE LA CLASSE
     public function __construct($n, $p, $a, $f, $s)
     {
         $this->nom = $n;
@@ -58,6 +59,10 @@ class Personne {
     {
         return $this->nom . " " . $this->prenom . " " . $this->salaire;
     }
+    public function sanctionner(Personne $pers, $valeur){
+        $this->salaire = $this->salaire - ($this->salaire * $valeur / 100);
+    }
+    
 }
 // Création d'objet : 
 $p1 = new Personne("O'Brian","Walter",26,"Scorpion",55000); // Personne() : c'est la fonction constructeur par défaut
@@ -68,8 +73,42 @@ echo "L'objet p2 : " . $p2;
 echo "<br>";
 $p2->setSalaire(3500);
 echo "La salaire de l'objet p2 deviendra : " . $p2;
-
 // TAF : Créer une fonction 
-// Sanctionner(Personne $pers, $valeur){}
-// : qui permet de sanctionner la personne $oers en réduisant son salaire
+// sanctionner(Personne $pers, $valeur){} 
+// : qui permet de sanctionner la personne $pers en réduisant son salaire 
 // de $valeur%
+echo "<br>";
+$p1->sanctionner($p1, 15);
+echo "Salaire de l'objet p1 après sanction deviendra : " . $p1->getSalaire();
+// Concept de l'OO : Héritage
+// extends : classeA extends classeB : classeA(fille) et classeB(mère)
+// LA classe fille hérite tout de la classe mère SAUF le constructeur.
+// Le constructeur de la classe mère sera INVOQUE dans la classe fille
+
+class Homme extends Personne{
+    private $militaire = 0;
+
+    // invoqué le constructeur
+    public function __construct($n,$p,$a,$f,$s,$m)
+    {
+        // parent : signifie accéder à la classe mère
+        parent::__construct($n,$p,$a,$f,$s);
+        // ligne précédente : equivaut aux 5 lignes suivantes.
+        // $this->nom = $n;
+        // $this->prenom = $p;
+        // $this->age = $a;
+        // $this->fonction = $f;
+        // $this->salaire = $s;
+        $this->militaire = $m;
+    }
+    // Getters + Setters
+    public function getMilitaire(){ return $this->militaire; }
+    public function setMilitaire($m){ $this->militaire = $m; }
+    
+    // Concept du polymorphisme
+    #[\Override] 
+    public function sanctionner(Personne $pers, $valeur){
+        return $this->salaire + $valeur;
+    }
+    
+}
