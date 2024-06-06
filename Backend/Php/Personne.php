@@ -110,5 +110,10 @@ class Homme extends Personne{
     public function sanctionner(Personne $pers, $valeur){
         return $this->salaire + $valeur;
     }
-    
+    // Concept du surcharge : 
+    // n'est pas utile à cause de l'absence de typage en PHP
+
 }
+
+// TAf : créer la classe femme qui hérite de la classe personne et redéfinir
+// la fonction "sanctionner"
